@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$myFont: 'Poppins', sans-serif;
+$primaryColor: #397FFE;
+$darkColor: #333;
+$lightColor: #444;
+$textColor: #555;
+$borderGrey: rgb(236, 236, 236);
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: $myFont;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+}
+
+@mixin flexCenter($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
