@@ -38,9 +38,9 @@ li {
     align-items: center;
 }
 
-@mixin flexStyle($justify) {
+@mixin flexStyle {
     display: flex;
-    justify-content: $justify;
+    justify-content: space-between;
     align-items: center;
 }
 
