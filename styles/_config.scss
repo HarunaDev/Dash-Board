@@ -31,10 +31,16 @@ li {
     display: flex;
 }
 
-@mixin flexCenter($direction, $justify, $align) {
+@mixin flexCenter {
     display: flex;
-    flex-direction: $direction;
+    // flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexStyle($justify) {
+    display: flex;
     justify-content: $justify;
-    align-items: $align;
+    align-items: center;
 }
 

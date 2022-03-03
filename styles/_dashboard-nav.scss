@@ -1,0 +1,122 @@
+.dashboard-nav {
+    width: 19vw;
+    padding: 2%;
+    background: 
+    #F8F8F8;
+
+    .nav-profile {
+        text-align: center;
+        margin-bottom: 10%;
+
+        img {
+            margin-bottom: 1%;
+            width: 56px;
+            height: 56px;
+        }
+
+        h3 {
+            color: $darkColor;
+            font-size: 14px;
+            margin-bottom: 2%;
+        }
+
+        p {
+            color: $textColor;
+            font-size: 14px;
+        }
+
+    }
+
+    .nav-btn {
+
+        @include flexCenter();
+
+        background: $primaryColor;
+        color: #fff;
+        padding: 10px 2px;
+        border-radius: 5px;
+        margin-bottom: 15%;
+
+        .svg {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            
+            svg {
+                width: 20px;
+                height: auto;
+                padding-right: 3px;
+            }
+
+            p {
+                padding-left: 3px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .dashboard-navlinks {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 25px;
+
+        ul li {
+            display: inline-flex;
+            justify-content: start;
+            align-items: flex-start;
+            width: 200px;
+            margin-bottom: 20px;
+            margin-left: 5px;
+
+            p {
+                text-align: start;
+                padding-left: 15px;
+                color: $textColor;
+            }
+        }
+    }
+
+    .dashboard-storage {
+        background: #fff;
+        padding: 30px 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+            margin: 0 auto 15px;
+        }
+
+        h3 {
+            color: $darkColor;
+            font-size: 18px;
+            margin: 10px auto;
+        }
+
+        a {
+            background: $primaryColor;
+            padding: 8px 20px;
+            color: #fff;
+            border: 1px solid $primaryColor;
+            border-radius: 5px;
+            margin: 5px auto;
+        }
+    }
+
+    .profile-bottom {
+        margin-top: 20px;
+        
+        a {
+            color: $lightColor;
+            display: flex;
+            
+            p {
+                padding-left: 15px;
+            }
+        }
+    }
+}
